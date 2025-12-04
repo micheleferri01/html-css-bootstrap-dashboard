@@ -50,7 +50,7 @@
     <div>
         <div class="container">
             <div class="row row-cols-1">
-                <div class="col">
+                <div class="col col-lg-8">
                     <!-- page title and add book button -->
                     <div class="d-flex justify-content-between mt-4">
                         <h1>Catalogo Libri</h1>
@@ -242,59 +242,61 @@
                     </div>
                     
                 </div>
-                <div class="col">
+                <div class="col col-lg-4">
                     <!-- cards -->
-                    <div class="card">
-                        <h2 class="card-header">Todo</h2>
-                        <div class="card-body">
-                            <ul class="list-group">
-                                <li class="list-group-item">
-                                    <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
-                                    <label class="form-check-label" for="firstCheckbox">Chiamare segreteria</label>
-                                </li>
-                                <li class="list-group-item">
-                                    <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
-                                    <label class="form-check-label" for="secondCheckbox">Mandare avvisi prestiti scaduti</label>
-                                </li>
-                                <li class="list-group-item">
-                                    <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
-                                    <label class="form-check-label" for="thirdCheckbox">Ordinare nuovi libri</label>
-                                </li>
-                            </ul>
+                    <div class="mt-4">
+                        <div class="card">
+                            <h2 class="card-header">Todo</h2>
+                            <div class="card-body">
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                                        <label class="form-check-label" for="firstCheckbox">Chiamare segreteria</label>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+                                        <label class="form-check-label" for="secondCheckbox">Mandare avvisi prestiti scaduti</label>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                                        <label class="form-check-label" for="thirdCheckbox">Ordinare nuovi libri</label>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card mt-4">
-                        <h2 class="card-header">F.A.Q.</h2>
-                        <div class="card-body">
-                            <div class="accordion accordion-flush" id="questions-accordition">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-one" aria-expanded="false" aria-controls="question-one">
-                                        Come aggiungere un nuovo libro?
-                                    </button>
-                                    </h2>
-                                    <div id="question-one" class="accordion-collapse collapse" data-bs-parent="#questions-accordition">
-                                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quos est numquam modi reiciendis enim officia. Laborum cumque consequatur aliquid atque minima dolores ea, exercitationem doloremque esse ipsa sunt similique.</div>
+                        <div class="card mt-4">
+                            <h2 class="card-header">F.A.Q.</h2>
+                            <div class="card-body">
+                                <div class="accordion accordion-flush" id="questions-accordition">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-one" aria-expanded="false" aria-controls="question-one">
+                                            Come aggiungere un nuovo libro?
+                                        </button>
+                                        </h2>
+                                        <div id="question-one" class="accordion-collapse collapse" data-bs-parent="#questions-accordition">
+                                        <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quos est numquam modi reiciendis enim officia. Laborum cumque consequatur aliquid atque minima dolores ea, exercitationem doloremque esse ipsa sunt similique.</div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-two" aria-expanded="false" aria-controls="question-two">
-                                        Posso accedere all'angrafica utenti?
-                                    </button>
-                                    </h2>
-                                    <div id="question-two" class="accordion-collapse collapse" data-bs-parent="#questions-accordition">
-                                    <div class="accordion-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe adipisci quis eligendi sit distinctio. Sapiente odit molestias itaque, explicabo minima excepturi error qui accusantium, natus iusto autem rerum expedita laboriosam?</div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-two" aria-expanded="false" aria-controls="question-two">
+                                            Posso accedere all'angrafica utenti?
+                                        </button>
+                                        </h2>
+                                        <div id="question-two" class="accordion-collapse collapse" data-bs-parent="#questions-accordition">
+                                        <div class="accordion-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe adipisci quis eligendi sit distinctio. Sapiente odit molestias itaque, explicabo minima excepturi error qui accusantium, natus iusto autem rerum expedita laboriosam?</div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-three" aria-expanded="false" aria-controls="question-three">
-                                        Posso usare questa dashboard da mobile?
-                                    </button>
-                                    </h2>
-                                    <div id="question-three" class="accordion-collapse collapse" data-bs-parent="#questions-accordition">
-                                    <div class="accordion-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi exercitationem quos ea illo harum assumenda reprehenderit, fugiat accusantium qui est inventore iusto atque vel quod earum, sint repellendus placeat facere.</div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-three" aria-expanded="false" aria-controls="question-three">
+                                            Posso usare questa dashboard da mobile?
+                                        </button>
+                                        </h2>
+                                        <div id="question-three" class="accordion-collapse collapse" data-bs-parent="#questions-accordition">
+                                        <div class="accordion-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi exercitationem quos ea illo harum assumenda reprehenderit, fugiat accusantium qui est inventore iusto atque vel quod earum, sint repellendus placeat facere.</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
