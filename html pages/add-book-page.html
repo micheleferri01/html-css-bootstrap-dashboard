@@ -15,7 +15,7 @@
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
     <!-- my css stylesheet -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <header>
@@ -48,23 +48,32 @@
     </header>
     <main>
         <div class="container mt-4">
-            <h1>Nuovo Libro</h1>
+            <h1 class="mb-4">Nuovo Libro</h1>
+            <!-- Form -->
             <form action="https://learning.tizianonicolai.com/request-catcher/index.php" method="post" class="row g-4">
+
+                <!-- input for author name -->
                 <div class="col">
-                    <label for="nome-autore" class="form-label">Nome Autore</label>
+                    <label for="nome-autore" class="form-label fw-semibold">Nome Autore</label>
                     <input type="text" class="form-control" id="nome-autore" name="nome-autore" placeholder="Inserisci il nome dell'autore">
                 </div>
+
+                <!-- input for author surname -->
                 <div class="col">
-                    <label for="cognome-autore" class="form-label">Cognome Autore</label>
+                    <label for="cognome-autore" class="form-label fw-semibold">Cognome Autore</label>
                     <input type="text" class="form-control" id="cognome-autore" name="cognome-autore" placeholder="Inserisci il cognome dell'autore">
                 </div>
+
+                <!-- input for book title -->
                 <div class="col-12">
-                    <label for="titolo-libro" class="form-label">Titolo</label>
+                    <label for="titolo-libro" class="form-label fw-semibold">Titolo</label>
                     <input type="text" class="form-control" id="titolo-libro" name="titolo-libro" placeholder="Inserisci il titolo del libro">
                     <p class="fs-6 text-muted">Titolo versione italiana</p>
                 </div>
-                <div class="col">
-                    <label class="form-label" for="genere">Genere</label>
+
+                <!-- input for book genre -->
+                <div class="col-12 col-lg-4">
+                    <label class="form-label fw-semibold" for="genere">Genere</label>
                     <select class="form-select" aria-label="Default select example" id="genere" name="genere">
                         <option selected>Seleziona il genere</option>
                         <option value="giallo">Giallo</option>
@@ -72,25 +81,35 @@
                         <option value="thriller">Thriller</option>
                     </select>
                 </div>
-                <div class="col">
-                    <label for="anno-di-pubblicazione" class="form-label">Anno di Pubblicazione</label>
-                    <input type="text" class="form-control" id="anno-di-pubblicazione" name="anno di pubblicazione" palceholder="Inserisci l'anno">
+
+                <!-- input for year of publishment of the book -->
+                <div class="col-12 col-lg-4">
+                    <label for="anno-di-pubblicazione" class="form-label fw-semibold">Anno di Pubblicazione</label>
+                    <input type="text" class="form-control" id="anno-di-pubblicazione" name="anno di pubblicazione" placeholder="Inserisci l'anno">
                 </div>
-                <div class="col">
-                    <label for="isbn-code" class="form-label">ISBN#</label>
+
+                <!-- input for isnb code -->
+                <div class="col-12 col-lg-4">
+                    <label for="isbn-code" class="form-label fw-semibold">ISBN#</label>
                     <input type="text" class="form-control" id="isbn-code" name="isbn-code" placeholder="Inserisci il codice ISBN#">
                 </div>
                 <hr>
+
+                <!-- input for personal notes -->
                 <div class="col">
-                    <label for="note" class="form-label">Note</label>
+                    <label for="note" class="form-label fw-semibold">Note</label>
                     <textarea class="form-control" id="note" name="note" rows="3" placeholder="Inserisci eventuali note sul libro"></textarea>
                 </div>
+
+                <!-- checkbox for disponibility of the book in digital version -->
                 <div class="col-12 form-check">
                     <input class="form-check-input" type="checkbox" value="disponibile in digitale" name="disponibile-in-digitale" id="checkDefault">
                     <label class="form-check-label" for="checkDefault">
                          Disponibile anche in digitale
                      </label>
                 </div>
+
+                <!-- button to submit the form -->
                 <div class="col">
                     <button type="submit" class="btn btn-primary mb-3">Aggiungi Libro</button>
                 </div>
